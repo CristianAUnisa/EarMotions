@@ -1,0 +1,329 @@
+#page{
+	max-width:1280px;
+}
+
+header {
+  	width: 100%;
+  	margin: 0;
+  	padding: 0;
+}
+
+nav div.destranav button.navbut {
+	height: auto;
+}
+
+header img {
+	max-width: 65%;
+	height: 3em;
+}
+
+#content {
+  	float: left;
+  	width: 60%;
+  	margin: 0 0 20px 0;
+  	padding: 0;
+}
+
+#content .bloc {
+	margin-right: 2%;
+}
+
+.sidebar{
+	float: left;
+	margin: 0 0 20px 1%;
+	padding: 0;   
+}
+
+#bar1{
+	width:20%;
+}
+
+#bar2{
+	width:18%;
+}
+
+@media screen and (max-width: 1000px) {
+	
+		form#checkoutform {
+		padding: 2%;
+		margin: auto;
+		width: 95%;
+	}
+	
+	form#checkoutform h1 {
+		font-size: 1.6em;
+	}
+
+	#checkoutform div#btns {
+		float: revert;
+		overflow: auto;
+		margin: 1em;
+	}
+	
+	 #checkoutform div#btns #nextBtn, #checkoutform div#btns #prevBtn {
+		width: 8em;
+  }
+	
+  #checkoutform div#btns #nextBtn {
+		float: right;
+  }
+	
+	#checkoutform input, #checkoutform select {
+		padding: 0.5em;
+		width: 80%;
+		font-size: 1em;
+		font-family: Raleway;
+		margin: 0.5em auto;
+		border: 1px solid #aaaaaa;
+	}
+	
+	div.product img#mainpicture {
+		margin: 3% auto;
+		float:revert;
+		width: 50%;
+		display: block;
+  }
+	
+	div.product .description {
+		width: auto;
+		margin: 3% 3%;
+		float: none;
+	}
+	
+	.boxregistrazione {
+		padding: 2% 2%;
+	}
+}
+
+@media (max-width: 880px) {
+	
+	/* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+	
+	header div#logo img {
+		height: 4%;
+		max-height: 3em;
+	}
+	
+	nav a {
+		display: none;
+	}
+	
+	nav a.butcarrello {
+		display: inline;
+	}
+	
+	.dropcarrello {
+		width: 100%;
+		height: auto;
+	}
+	
+	nav a.hamburger {
+		float: left;
+		display: block;
+	}
+	
+	nav.responsive {
+		position: relative;
+	}
+	
+	nav.responsive a.hamburger {
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+	
+	nav.responsive button.navbut {
+		display: inline;
+	}
+	
+	nav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	nav.responsive a.butcarrello {
+    display: inline-block;
+		margin: auto;
+	}
+	
+	#ordini, #prodotti {
+		width: 90%;
+	}
+	
+	#checkoutform {
+ 		width: 100%;
+ 		margin: auto;
+	}
+	
+}
+
+@media screen and (max-width: 540px) {
+
+	header img {
+    width: 62%;
+  }
+	
+	div.product img#mainpicture {
+		margin: 3% auto;
+		float: none;
+		width: 50%;
+		display: block;
+  }
+	
+	div.product .description {
+		width: auto;
+		margin: 3% 3%;
+		float: none;
+	}
+	
+	div.rowaggiungi {
+    margin: 0 auto;
+		text-align: center;
+	}
+	
+	div.product span#prezzo {
+		display: inline-block;
+	}
+	
+	div.product .atcproduct {
+		display: block;
+		float: revert;
+		width: 100%;
+	}
+	
+	nav button.loginbut {
+		width: 11em;
+  }
+	
+	.boxregistrazione input[type=text], .boxregistrazione input[type=password], .boxregistrazione input[type=email] {
+    margin-right: auto;
+		width: 90%;
+		margin-left: auto;
+	}
+	
+	.boxregistrazione label {
+		font-size: 1.1em
+	}
+	
+	.cancelbtn {
+		width: 100%;
+	}
+	
+	.boxregistrazione {
+		width: 90%;
+	}
+	
+	div#productsgrid {
+		display: block;
+		clear: both;
+	}
+	
+	.card {
+		max-width: 30%;
+		max-height: 20%;
+		font-size: 0.8em;
+	}
+	
+	.card :not(img) {
+		font-size: 1em;
+	}
+	
+	.card img.picproduct {
+		max-width: 100%;
+		max-height: 900px;
+		height: 8em;
+	}
+	
+	.card button {
+		max-height: 5em;
+		padding: auto;
+		font-size: 0.8em;
+	}
+	
+	.boxregistrazione {
+		padding: 2% 2%;
+	}
+	
+	footer {
+		margin-left: 0%;
+	}
+	
+	.footer-left,
+	.footer-center,
+	.footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	
+	table#ordini, table#prodotti {
+		width: 100%;
+		margin: 2% auto 2% auto;
+		border-collapse: separate;
+		border-spacing: 0 1em;
+		border-style: none;
+		font-size: 0.8em;
+	}
+	
+	#prodotto img {
+		float: left;
+		max-width: 30%;
+		margin: 0% 8% 9% 0%;
+	}
+
+	#ordini th, #prodotti th {
+		max-width: 10%;
+		background:#8C0303;
+		color: white;
+		padding: 0.2em;
+	}
+
+	#ordini th.codice, #prodotti th.codice {
+		width: 3em;
+	}
+
+	#prodotti th.nomeprod {
+		width: 20em;
+	}
+	
+	.footer-center i{
+		margin-left: 0;
+	}
+	
+	p.reviewpurchase {
+		font-size: 0.8em;
+		width: 90%;
+		margin: auto;
+	}
+	
+	p.totale {
+		font-size:1.2em;
+		margin: auto;
+	}
+	
+		
+  div.field fieldset {
+		display: block;
+		max-width: 95%;
+		padding: 1em 0.2em;
+		margin: 1em auto; 
+	}
+	
+	div.field fieldset button {
+		float: none;
+		display: block;
+		margin: 1em auto;
+		width: 100%;
+	}
+	
+	div.product div.description h2 {
+		margin-bottom: 1em;
+	}
+	
+	div.rowaggiungi * {
+		margin: auto;
+		text-align: center;
+	}
+}

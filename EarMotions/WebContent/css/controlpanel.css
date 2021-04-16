@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+}
+
+ /* The side navigation menu */
+aside {
+  margin: 0;
+  padding: 0;
+  width: 10em;
+  background-color: #021373;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: sans-serif;  
+}
+
+aside ul {
+  list-style: none;
+  display: inline;
+}
+
+aside li {
+  margin: 0;
+}
+
+aside>ul ul {
+  display: none;
+  background-color: #504aff;
+  padding: 0 0 0 1em;
+}
+
+/* Sidebar links */
+aside a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+aside .active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Links on mouse-over */
+aside li:hover:not(.active) {
+  background-color: #8C0303;
+  color: white;
+}
+
+form div {
+  display: table;
+}
+
+form div p {
+  display: table-row;
+}
+
+form div p :first-child {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  font-family: sans-serif;
+  width: 20%;
+  padding: 0em 1em;
+}
+
+form div p input {
+  display: table-cell;
+  margin: 1em 0;
+}
+
+form div p textarea {
+  display: table-cell;
+  width: 25em;
+  height: 4em;
+}
+
+form>input {
+  float: right;
+  margin: 2em;
+}
+
+div.content table {
+  width: 70%;
+}
+
+div.content table.tableproductedit img {
+  width: 4em;
+}
+
+div.content table, div.content table th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+div.content table.productlist tr:not(:first-child) {
+  cursor: pointer;
+}
+
+div.content table, div.content table th, div.content table td {
+  padding: 0.5em;
+}
+
+div.content table tr td:first-child {
+  width: 0.1em;
+  text-align: center;
+  font-weight: bold;
+}
+
+div.content table tr:nth-child(even) {
+  background-color: #DCDCDC;
+}
+
+div.content table div.descrizione {
+  max-height: 8em;
+  overflow-y: scroll;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 10em;
+  padding: 2em 2em;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  aside {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  aside a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+table#ordinitable {
+  cursor: pointer;
+}
+
+div.daticliente {
+	display: table;
+	border-collapse: separate;
+  border-spacing: 0.5em;
+}
+
+div.daticliente div.riga {
+	display: table-row;
+}
+
+div.riga p {
+	display: table-cell;
+	border: black solid 1px;
+	padding: 0.2em 0.5em;
+	margin: 0.5em;
+}
+
+div.riga p:first-child {
+	text-align: right;
+	font-weight: bold;
+}
+
+div.daticliente div.riga:nth-child(even) {
+		background-color: #ffefea;
+}
+
+div.riga p:not(:first-child) {
+	width: 20em;
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  aside a {
+    height: auto;
+    text-align: center;
+    float: none;
+  }
+  
+  div.content {
+    width: 100%;
+    overflow-x: auto;
+    margin: auto;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  div.content p {
+    text-align: center;
+  }
+  
+  div.content p * {
+    margin: 0.5em;
+    font-size: 0.9em;
+  }
+  
+  div.content table {
+    margin: auto;
+  }
+  
+  div.content table, div.content table th, div.content table td {
+    padding: 0.3em;
+  }
+
+  div.content table tr td:first-child {
+    width: 0.1em;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  div.content table tr:nth-child(even) {
+    background-color: #DCDCDC;
+  }
+} 
